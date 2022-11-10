@@ -31,7 +31,7 @@ Using
 
 ## Endpoints
 
-* `POST /users` create a user with following request body JSON structure:
+* `POST /v1/users` create a user with following request body JSON structure:
     * ```
         {
             "firstName": String,
@@ -39,9 +39,9 @@ Using
         }
       ```
     * first name / last name combination must be unique
-* `GET /users` get all users, ordered alphabetically by last name
-* `GET /users/:id` get a user by id path parameter
-* `DELETE /users/:id` delete a user by id path parameter
+* `GET /v1/users` get all users, ordered alphabetically by last name
+* `GET /v1/users/:id` get a user by id path parameter
+* `DELETE /v1/users/:id` delete a user by id path parameter
 
 Endpoints require an API key (passed with header `X-API-KEY`). The key for this exercise is `113`.
 
